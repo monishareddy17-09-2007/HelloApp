@@ -1,10 +1,20 @@
 package com.example.helloapp;
 
-/**
- * Hello world!
- */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        
+        if (args.length > 0) {
+            
+            for (int i = 0; i < args.length; i++) {
+                String name = args[i];
+                System.out.println("Hello " + name);
+            }
+        } else {
+            
+            String defaultName = "World";
+            System.out.println("Hello " + defaultName);
+        }
+        
     }
 }
